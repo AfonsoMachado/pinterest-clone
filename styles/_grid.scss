@@ -9,6 +9,7 @@
   display: grid;
   grid-template-columns: repeat(7, 252px);
 
+  // a grid fica oculta inicialmente
   max-height: 0px;
   visibility: hidden;
   pointer-events: none;

@@ -1,0 +1,3 @@
+TODO Animação de baixo pra cima
+TODO Imagens no lugar dos cards
+TODO Scroll snap como no site
