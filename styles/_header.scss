@@ -30,5 +30,39 @@ header {
         }
       }
     }
+    .buttons {
+      display: flex;
+      margin-left: 24px;
+
+      button {
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 11px 12px;
+        border-radius: 24px;
+        border: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .login {
+        color: $white;
+        background: $red;
+
+        &:hover {
+          background: $red-hover;
+        }
+      }
+      .signup {
+        margin-left: 16px;
+        background: $gray-light;
+
+        &:hover {
+          background: $gray-hover;
+        }
+      }
+    }
   }
 }
