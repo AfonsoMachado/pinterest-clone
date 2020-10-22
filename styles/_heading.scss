@@ -27,6 +27,9 @@
     .text {
       white-space: nowrap;
       color: $red;
+
+      // duração da transição
+      transition-duration: 1s;
     }
   }
 }
