@@ -15,4 +15,9 @@ input {
 li {
   list-style: none;
 }
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
 /*# sourceMappingURL=styles.css.map */
