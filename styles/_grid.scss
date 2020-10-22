@@ -8,6 +8,17 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(7, 252px);
+
+  max-height: 0px;
+  visibility: hidden;
+  pointer-events: none;
+
+  // quando o grid está ativo para ser visivel, pela animação
+  &.active {
+    max-height: unset;
+    visibility: visible;
+    pointer-events: auto;
+  }
 }
 
 .column {

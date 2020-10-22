@@ -1,15 +1,24 @@
 const grids = document.querySelectorAll('.grid');
-const heading = document.querySelectorAll('.heading .wrapper. text');
+const headings = document.querySelectorAll('.heading .wrapper .text');
 
-function enterScreen(index) {}
+function enterScreen(index) {
+  const grid = grids[index];
+  const heading = headings[index];
+  const gridColumns = grid.querySelectorAll('.column');
+
+  // ao entrar numa tela , a div ganha a classe .active
+  grid.classList.add('active');
+
+  gridColumns.forEach((element) => {
+    element.classList.remove('animate-before');
+  });
+}
 
 function exitScreen(index, exitDelay) {}
 
-function setupAnimationCycle({
-  initialScreenIndex,
-  timePerScreen,
-  exitDelay,
-}) {}
+function setupAnimationCycle({ initialScreenIndex, timePerScreen, exitDelay }) {
+  enterScreen(initialScreenIndex);
+}
 
 setupAnimationCycle({
   // tela inicial que abre quando o usuario abre a pagina
